@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        * {
+            background-color: burlywood;
+        }
+
+        p {
+            color: rgb(19, 17, 14);
+        }
+
+        .textcolor {
+            color: rgb(41, 43, 180);
+        }
+
+        .largetext {
+            font-size: 20px;
+        }
+
+        /* .textcolor.largetext{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }*/
+        #unique {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        h2,
+        h3 {
+            color: rgb(42, 18, 197);
+            font-family: cursive;
+        }
+
+        /* Descendant Selector */
+        div p span {
+            color: crimson;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Children selector */
+        div>p>span {
+            color: darkmagenta;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+        /* Attribute selector */
+        a[href="http://netflix.com"]{
+            background-color: chartreuse;
+        }
+        p[class="abc"]{
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<!-- ELEMENT SELECTOR -->
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique quisquam cumque quae rerum nemo maxime
+        ipsa minus distinctio dicta sequi, tempora ducimus porro, reiciendis quasi fugit commodi laudantium
+        exercitationem! Odio doloribus vero perferendis sunt quos reprehenderit explicabo! Animi, consequuntur</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit similique quisquam cumque quae rerum nemo maxime
+        ipsa minus distinctio dicta sequi, tempora ducimus porro, reiciendis quasi fugit commodi laudantium
+        exercitationem! Odio doloribus vero perferendis sunt quos reprehenderit explicabo! Animi, consequuntur</p>
+
+    <!-- Class selector -->
+    <h1>Class selector </h1>
+    <p class="textcolor largetext ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium sequi nemo
+        ut, aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus officiis. Vero totam esse
+        temporibus maxime commodi?</p>
+
+    <p class="largetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium sequi nemo ut,
+        aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus officiis. Vero totam esse
+        temporibus maxime commodi?</p>
+
+    <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium sequi nemo ut,
+        aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus officiis. Vero totam esse
+        temporibus maxime commodi?</p>
+
+    <!-- ID SELECTOR -->
+    <h1>Id selector </h1>
+    <p class="textcolor largetext " id="unique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+        accusantium sequi nemo ut, aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus
+        officiis. Vero totam esse temporibus maxime commodi?</p>
+
+    <p class="largetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium sequi nemo ut,
+        aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus officiis. Vero totam esse
+        temporibus maxime commodi?</p>
+
+    <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium sequi nemo ut,
+        aliquam, quam dolores quibusdam, facere enim eligendi autem doloribus voluptatibus officiis. Vero totam esse
+        temporibus maxime commodi?</p>
+
+    <!-- Grouping selector -->
+    <h1>Grouping selector</h1>
+
+    <h2>Header 2</h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia excepturi corrupti ut. Eligendi atque id voluptas
+        optio repellendus ipsa dignissimos hic illum non odit cumque temporibus autem consequatur eveniet, explicabo
+        quaerat totam voluptatem a culpa. Nisi ut cum quam, eos deserunt, quibusdam optio qui tenetur nostrum
+        perspiciatis explicabo iste dicta ab incidunt, ea eligendi facere magnam. Ullam aliquid corrupti commodi?</p>
+
+    <h3>Header 3</h3>
+    <!-- Combinator selector -->
+    <!-- Descendant Selector -->
+    <div>
+        <p>
+            <span>I am child</span>
+        </p>
+    </div>
+
+    <div>
+        <span>
+            <p>
+                <span>I am Descendant</span>
+            </p>
+        </span>
+    </div>
+<!-- Attribute selector (tags ke andar key values pair are knowns as attribute) -->
+<p class="abc">I am an attribute</p>
+<a href="http://nados.io" target="_blank">NADOS</a>
+<a href="http://google.IN">GOOGLE</a>
+<a href="http://netflix.com" target="_blank">NETFLIX</a>
+
+
+
+</body>
+
+</html>
